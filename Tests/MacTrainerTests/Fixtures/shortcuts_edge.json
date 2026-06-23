@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-06-24",
+  "shortcuts": [
+    {
+      "id": "edge.multikey",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘K Z",
+      "description": "禅模式(双键位)",
+      "appScope": ["vscode"],
+      "verifiedAgainst": "test edge",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+K Z"]
+    },
+    {
+      "id": "edge.no.modifier",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "Space",
+      "description": "Quick Look(无修饰键)",
+      "appScope": ["finder"],
+      "verifiedAgainst": "test edge",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Space"]
+    },
+    {
+      "id": "edge.unicode",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌘Space",
+      "description": "Spotlight",
+      "appScope": ["system"],
+      "verifiedAgainst": "test edge",
+      "verifiedDate": "2026-06-24",
+      "aliases": []
+    }
+  ]
+}

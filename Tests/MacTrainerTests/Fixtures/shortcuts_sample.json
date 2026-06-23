@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-06-24",
+  "shortcuts": [
+    {
+      "id": "test.cmd.space",
+      "category": "system",
+      "subcategory": "spotlight",
+      "displayKey": "⌘Space",
+      "description": "打开 Spotlight",
+      "appScope": ["system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+Space"]
+    },
+    {
+      "id": "test.cmd.s",
+      "category": "system",
+      "subcategory": "file",
+      "displayKey": "⌘S",
+      "description": "保存",
+      "appScope": ["system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+S"]
+    },
+    {
+      "id": "test.cmd.shift.3",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌘⇧3",
+      "description": "截全屏",
+      "appScope": ["system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+Shift+3"]
+    },
+    {
+      "id": "test.cmd.shift.4",
+      "category": "finder",
+      "subcategory": "file",
+      "displayKey": "⌘⇧4",
+      "description": "新建文件夹",
+      "appScope": ["finder", "system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+Shift+N"]
+    },
+    {
+      "id": "test.cmd.arrow.left",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌘←",
+      "description": "光标到行首",
+      "appScope": ["system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+Left"]
+    },
+    {
+      "id": "test.cmd.f",
+      "category": "system",
+      "subcategory": "find",
+      "displayKey": "⌘F",
+      "description": "查找",
+      "appScope": ["system", "finder"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+F"]
+    },
+    {
+      "id": "test.ctrl.cmd.q",
+      "category": "system",
+      "subcategory": "screensaver",
+      "displayKey": "⌃⌘Q",
+      "description": "锁定屏幕",
+      "appScope": ["system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Ctrl+Cmd+Q"]
+    },
+    {
+      "id": "test.alt.cmd.esc",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌥⌘Esc",
+      "description": "强制退出",
+      "appScope": ["system"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Option+Cmd+Esc"]
+    },
+    {
+      "id": "test.cmd.k",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌘K",
+      "description": "清屏",
+      "appScope": ["terminal"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+K"]
+    },
+    {
+      "id": "test.cmd.shift.p",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘⇧P",
+      "description": "命令面板",
+      "appScope": ["vscode"],
+      "verifiedAgainst": "test fixture",
+      "verifiedDate": "2026-06-24",
+      "aliases": ["Cmd+Shift+P"]
+    }
+  ]
+}

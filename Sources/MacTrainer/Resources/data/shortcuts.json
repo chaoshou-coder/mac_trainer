@@ -1,0 +1,3056 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-06-24",
+  "shortcuts": [
+    {
+      "id": "sys.spotlight.open",
+      "category": "system",
+      "subcategory": "spotlight",
+      "displayKey": "⌘Space",
+      "description": "打开 Spotlight 搜索",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Space"
+      ]
+    },
+    {
+      "id": "sys.screenshot.full",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌘⇧3",
+      "description": "截全屏到桌面",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+3"
+      ]
+    },
+    {
+      "id": "sys.screenshot.selection",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌘⇧4",
+      "description": "截屏选区到桌面",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+4"
+      ]
+    },
+    {
+      "id": "sys.screenshot.window",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌘⇧4Space",
+      "description": "截窗口到桌面",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+4+Space"
+      ]
+    },
+    {
+      "id": "sys.screenshot.toolbar",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌘⇧5",
+      "description": "打开截屏工具栏",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+5"
+      ]
+    },
+    {
+      "id": "sys.app.switch",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘Tab",
+      "description": "切换应用",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Tab"
+      ]
+    },
+    {
+      "id": "sys.app.windowCycle",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘`",
+      "description": "同 app 窗口循环切换",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+`"
+      ]
+    },
+    {
+      "id": "sys.app.quit",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘Q",
+      "description": "退出应用",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Q"
+      ]
+    },
+    {
+      "id": "sys.window.close",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘W",
+      "description": "关闭窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+W"
+      ]
+    },
+    {
+      "id": "sys.window.minimize",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘M",
+      "description": "最小化窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+M"
+      ]
+    },
+    {
+      "id": "sys.window.hide",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘H",
+      "description": "隐藏应用",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+H"
+      ]
+    },
+    {
+      "id": "sys.window.fullscreen",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌃⌘F",
+      "description": "进入/退出全屏",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Cmd+F"
+      ]
+    },
+    {
+      "id": "sys.missioncontrol.show",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃↑",
+      "description": "调度中心(显示所有窗口)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Up"
+      ]
+    },
+    {
+      "id": "sys.missioncontrol.appwindows",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃↓",
+      "description": "显示当前应用所有窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Down"
+      ]
+    },
+    {
+      "id": "sys.desktop.next",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃→",
+      "description": "切换到右一个桌面",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Right"
+      ]
+    },
+    {
+      "id": "sys.desktop.prev",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃←",
+      "description": "切换到左一个桌面",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Left"
+      ]
+    },
+    {
+      "id": "sys.lock.screen",
+      "category": "system",
+      "subcategory": "screensaver",
+      "displayKey": "⌃⌘Q",
+      "description": "锁定屏幕",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Cmd+Q"
+      ]
+    },
+    {
+      "id": "sys.input.chars",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌃⌘Space",
+      "description": "字符检视器(emoji/特殊字符)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Cmd+Space"
+      ]
+    },
+    {
+      "id": "sys.forcequit",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌥⌘Esc",
+      "description": "强制退出应用",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+Esc"
+      ]
+    },
+    {
+      "id": "sys.dock.toggle",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌥⌘D",
+      "description": "显示/隐藏 Dock",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+D"
+      ]
+    },
+    {
+      "id": "sys.help",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌘⇧?",
+      "description": "打开应用帮助",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+/"
+      ]
+    },
+    {
+      "id": "sys.preferences",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌘,",
+      "description": "打开应用偏好设置",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+,"
+      ]
+    },
+    {
+      "id": "sys.screenshot.clipboard.full",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌃⌘⇧3",
+      "description": "截全屏到剪贴板",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Cmd+Shift+3"
+      ]
+    },
+    {
+      "id": "sys.screenshot.clipboard.selection",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌃⌘⇧4",
+      "description": "截屏选区到剪贴板",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Cmd+Shift+4"
+      ]
+    },
+    {
+      "id": "sys.notification.center",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃⇧F12",
+      "description": "显示通知中心",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Shift+F12"
+      ]
+    },
+    {
+      "id": "sys.menubar.clock",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "F12",
+      "description": "Dashboard",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "F12"
+      ]
+    },
+    {
+      "id": "finder.open.finder",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⌘N",
+      "description": "新建 Finder 窗口",
+      "appScope": [
+        "finder",
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+N"
+      ]
+    },
+    {
+      "id": "finder.new.folder",
+      "category": "finder",
+      "subcategory": "file",
+      "displayKey": "⌘⇧N",
+      "description": "新建文件夹",
+      "appScope": [
+        "finder",
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+N"
+      ]
+    },
+    {
+      "id": "finder.open.file",
+      "category": "finder",
+      "subcategory": "file",
+      "displayKey": "⌘O",
+      "description": "打开文件",
+      "appScope": [
+        "finder",
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+O"
+      ]
+    },
+    {
+      "id": "finder.showinfo",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘I",
+      "description": "显示文件简介",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+I"
+      ]
+    },
+    {
+      "id": "finder.quicklook",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "Space",
+      "description": "快速预览(Quick Look)",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Space"
+      ]
+    },
+    {
+      "id": "finder.duplicate",
+      "category": "finder",
+      "subcategory": "file",
+      "displayKey": "⌘D",
+      "description": "复制文件",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+D"
+      ]
+    },
+    {
+      "id": "finder.move.trash",
+      "category": "finder",
+      "subcategory": "file",
+      "displayKey": "⌘⌫",
+      "description": "移到废纸篓",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Backspace"
+      ]
+    },
+    {
+      "id": "finder.empty.trash",
+      "category": "finder",
+      "subcategory": "file",
+      "displayKey": "⌘⇧⌫",
+      "description": "清空废纸篓",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+Backspace"
+      ]
+    },
+    {
+      "id": "finder.go.up",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⌘↑",
+      "description": "上一层目录",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Up"
+      ]
+    },
+    {
+      "id": "finder.go.home",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⌘⇧H",
+      "description": "跳到 Home 目录",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+H"
+      ]
+    },
+    {
+      "id": "finder.go.desktop",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⌘⇧D",
+      "description": "跳到桌面",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+D"
+      ]
+    },
+    {
+      "id": "finder.search",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⌘F",
+      "description": "在 Finder 中搜索",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+F"
+      ]
+    },
+    {
+      "id": "finder.view.icons",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘1",
+      "description": "图标视图",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+1"
+      ]
+    },
+    {
+      "id": "finder.view.list",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘2",
+      "description": "列表视图",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+2"
+      ]
+    },
+    {
+      "id": "finder.view.columns",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘3",
+      "description": "分栏视图",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+3"
+      ]
+    },
+    {
+      "id": "finder.view.gallery",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘4",
+      "description": "画廊视图",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+4"
+      ]
+    },
+    {
+      "id": "finder.show.path",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌥⌘P",
+      "description": "显示/隐藏路径栏",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+P"
+      ]
+    },
+    {
+      "id": "finder.show.hidden",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘⇧.",
+      "description": "显示/隐藏隐藏文件",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+."
+      ]
+    },
+    {
+      "id": "finder.show.terminal",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⌃Space",
+      "description": "在 Finder 当前目录打开 Terminal(Quick Action)",
+      "appScope": [
+        "finder",
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Space"
+      ]
+    },
+    {
+      "id": "term.new.window",
+      "category": "terminal",
+      "subcategory": "window",
+      "displayKey": "⌘N",
+      "description": "新建 Terminal 窗口",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+N"
+      ]
+    },
+    {
+      "id": "term.new.tab",
+      "category": "terminal",
+      "subcategory": "tab",
+      "displayKey": "⌘T",
+      "description": "新建 Terminal 标签",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+T"
+      ]
+    },
+    {
+      "id": "term.next.tab",
+      "category": "terminal",
+      "subcategory": "tab",
+      "displayKey": "⌃Tab",
+      "description": "下一个标签",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Tab"
+      ]
+    },
+    {
+      "id": "term.split.vertical",
+      "category": "terminal",
+      "subcategory": "split",
+      "displayKey": "⌘D",
+      "description": "垂直拆分面板",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+D"
+      ]
+    },
+    {
+      "id": "term.scroll.top",
+      "category": "terminal",
+      "subcategory": "navigation",
+      "displayKey": "⌘Home",
+      "description": "滚到顶部",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Home"
+      ]
+    },
+    {
+      "id": "term.scroll.bottom",
+      "category": "terminal",
+      "subcategory": "navigation",
+      "displayKey": "⌘End",
+      "description": "滚到底部",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+End"
+      ]
+    },
+    {
+      "id": "term.clear",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌘K",
+      "description": "清屏",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+K"
+      ]
+    },
+    {
+      "id": "term.find",
+      "category": "terminal",
+      "subcategory": "navigation",
+      "displayKey": "⌘F",
+      "description": "查找",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+F"
+      ]
+    },
+    {
+      "id": "term.interrupt",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌃C",
+      "description": "中断当前命令",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+C"
+      ]
+    },
+    {
+      "id": "term.send.eof",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌃D",
+      "description": "发送 EOF",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+D"
+      ]
+    },
+    {
+      "id": "term.suspend",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌃Z",
+      "description": "挂起当前进程",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+Z"
+      ]
+    },
+    {
+      "id": "text.cursor.left",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "←",
+      "description": "光标左移一字符",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Left"
+      ]
+    },
+    {
+      "id": "text.cursor.right",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "→",
+      "description": "光标右移一字符",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Right"
+      ]
+    },
+    {
+      "id": "text.cursor.lineStart",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌘←",
+      "description": "光标到行首",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Left"
+      ]
+    },
+    {
+      "id": "text.cursor.lineEnd",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌘→",
+      "description": "光标到行尾",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Right"
+      ]
+    },
+    {
+      "id": "text.cursor.wordLeft",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌥←",
+      "description": "光标左移一个词",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Left"
+      ]
+    },
+    {
+      "id": "text.cursor.wordRight",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌥→",
+      "description": "光标右移一个词",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Right"
+      ]
+    },
+    {
+      "id": "text.select.lineStart",
+      "category": "text",
+      "subcategory": "selection",
+      "displayKey": "⇧⌘←",
+      "description": "选到行首",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Shift+Cmd+Left"
+      ]
+    },
+    {
+      "id": "text.select.lineEnd",
+      "category": "text",
+      "subcategory": "selection",
+      "displayKey": "⇧⌘→",
+      "description": "选到行尾",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Shift+Cmd+Right"
+      ]
+    },
+    {
+      "id": "text.delete.wordLeft",
+      "category": "text",
+      "subcategory": "delete",
+      "displayKey": "⌥⌫",
+      "description": "删到上一个词边界",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Backspace"
+      ]
+    },
+    {
+      "id": "text.delete.wordRight",
+      "category": "text",
+      "subcategory": "delete",
+      "displayKey": "⌃D",
+      "description": "删到下一个词边界",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+D"
+      ]
+    },
+    {
+      "id": "text.delete.line",
+      "category": "text",
+      "subcategory": "delete",
+      "displayKey": "⌘⌫",
+      "description": "删到行首",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Backspace"
+      ]
+    },
+    {
+      "id": "text.undo",
+      "category": "text",
+      "subcategory": "edit",
+      "displayKey": "⌘Z",
+      "description": "撤销",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Z"
+      ]
+    },
+    {
+      "id": "text.redo",
+      "category": "text",
+      "subcategory": "edit",
+      "displayKey": "⌘⇧Z",
+      "description": "重做",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+Z"
+      ]
+    },
+    {
+      "id": "vscode.command",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘⇧P",
+      "description": "命令面板",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+P"
+      ]
+    },
+    {
+      "id": "vscode.quickOpen",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘P",
+      "description": "快速打开文件",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+P"
+      ]
+    },
+    {
+      "id": "vscode.find",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘F",
+      "description": "查找",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+F"
+      ]
+    },
+    {
+      "id": "vscode.replace",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌥⌘F",
+      "description": "替换",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+F"
+      ]
+    },
+    {
+      "id": "vscode.terminal.toggle",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌃`",
+      "description": "切换终端",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+`"
+      ]
+    },
+    {
+      "id": "vscode.sidebar.toggle",
+      "category": "vscode",
+      "subcategory": "view",
+      "displayKey": "⌘B",
+      "description": "切换侧边栏",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+B"
+      ]
+    },
+    {
+      "id": "vscode.split.editor",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘\\",
+      "description": "拆分编辑器",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+\\"
+      ]
+    },
+    {
+      "id": "vscode.gotoLine",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌃G",
+      "description": "跳到行",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Ctrl+G"
+      ]
+    },
+    {
+      "id": "vscode.comment",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘/",
+      "description": "注释行",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+/"
+      ]
+    },
+    {
+      "id": "vscode.format",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⇧⌥F",
+      "description": "格式化代码",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Shift+Option+F"
+      ]
+    },
+    {
+      "id": "vscode.multicursor",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌥Click",
+      "description": "多光标",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Click"
+      ]
+    },
+    {
+      "id": "vscode.zenmode",
+      "category": "vscode",
+      "subcategory": "view",
+      "displayKey": "⌘K Z",
+      "description": "禅模式",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+K Z"
+      ]
+    },
+    {
+      "id": "chrome.newTab",
+      "category": "chrome",
+      "subcategory": "tab",
+      "displayKey": "⌘T",
+      "description": "新建标签页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+T"
+      ]
+    },
+    {
+      "id": "chrome.closeTab",
+      "category": "chrome",
+      "subcategory": "tab",
+      "displayKey": "⌘W",
+      "description": "关闭当前标签页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+W"
+      ]
+    },
+    {
+      "id": "chrome.reopenTab",
+      "category": "chrome",
+      "subcategory": "tab",
+      "displayKey": "⌘⇧T",
+      "description": "重新打开关闭的标签页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+T"
+      ]
+    },
+    {
+      "id": "chrome.nextTab",
+      "category": "chrome",
+      "subcategory": "tab",
+      "displayKey": "⌥⌘→",
+      "description": "切换到右一标签页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+Right"
+      ]
+    },
+    {
+      "id": "chrome.prevTab",
+      "category": "chrome",
+      "subcategory": "tab",
+      "displayKey": "⌥⌘←",
+      "description": "切换到左一标签页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+Left"
+      ]
+    },
+    {
+      "id": "chrome.focusAddress",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘L",
+      "description": "聚焦地址栏",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+L"
+      ]
+    },
+    {
+      "id": "chrome.find",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘F",
+      "description": "页内查找",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+F"
+      ]
+    },
+    {
+      "id": "chrome.bookmarks",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘⇧B",
+      "description": "显示/隐藏书签栏",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+B"
+      ]
+    },
+    {
+      "id": "chrome.bookmarkPage",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘D",
+      "description": "收藏当前页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+D"
+      ]
+    },
+    {
+      "id": "chrome.newWindow",
+      "category": "chrome",
+      "subcategory": "window",
+      "displayKey": "⌘N",
+      "description": "新建窗口",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+N"
+      ]
+    },
+    {
+      "id": "chrome.incognito",
+      "category": "chrome",
+      "subcategory": "window",
+      "displayKey": "⌘⇧N",
+      "description": "新建无痕窗口",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Shift+N"
+      ]
+    },
+    {
+      "id": "chrome.history",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘Y",
+      "description": "显示历史记录",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Cmd+Y"
+      ]
+    },
+    {
+      "id": "chrome.devtools",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌥⌘I",
+      "description": "打开开发者工具",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-20",
+      "aliases": [
+        "Option+Cmd+I"
+      ]
+    },
+    {
+      "id": "sys.accessibility.voiceover.toggle",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌘F5",
+      "description": "开启/关闭 VoiceOver",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+F5"
+      ]
+    },
+    {
+      "id": "sys.accessibility.zoom.toggle",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌥⌘8",
+      "description": "缩放(开/关)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+8"
+      ]
+    },
+    {
+      "id": "sys.accessibility.zoom.in",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌥⌘=",
+      "description": "放大",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+="
+      ]
+    },
+    {
+      "id": "sys.accessibility.zoom.out",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌥⌘-",
+      "description": "缩小",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+-"
+      ]
+    },
+    {
+      "id": "sys.accessibility.contrast",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌃⌥⌘.",
+      "description": "增强对比度(开/关)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Option+Cmd+."
+      ]
+    },
+    {
+      "id": "sys.accessibility.invert",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌃⌥⌘8",
+      "description": "经典反色(开/关)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Option+Cmd+8"
+      ]
+    },
+    {
+      "id": "sys.accessibility.stickykeys",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌃⌥F5",
+      "description": "连按五次修饰键打开粘滞键等辅助功能快捷键",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Option+F5"
+      ]
+    },
+    {
+      "id": "sys.accessibility.mousekeys",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌃⌥F6",
+      "description": "鼠标键(开/关,需先在辅助功能中启用)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Option+F6"
+      ]
+    },
+    {
+      "id": "sys.accessibility.reduceMotion",
+      "category": "system",
+      "subcategory": "accessibility",
+      "displayKey": "⌃⌥⌘←",
+      "description": "减少动态效果(Reduce Motion)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Option+Cmd+Left"
+      ]
+    },
+    {
+      "id": "sys.dock.exposeAll",
+      "category": "system",
+      "subcategory": "dock",
+      "displayKey": "F3",
+      "description": "调度中心(键盘 Mission Control 键)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F3"
+      ]
+    },
+    {
+      "id": "sys.dock.appExpose",
+      "category": "system",
+      "subcategory": "dock",
+      "displayKey": "F4",
+      "description": "显示当前应用的所有窗口(键盘应用窗口键)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F4"
+      ]
+    },
+    {
+      "id": "sys.dock.showDesktop",
+      "category": "system",
+      "subcategory": "dock",
+      "displayKey": "F11",
+      "description": "显示桌面(将所有窗口收到屏幕边缘)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F11"
+      ]
+    },
+    {
+      "id": "sys.menubar.focus",
+      "category": "system",
+      "subcategory": "menubar",
+      "displayKey": "⌃F2",
+      "description": "将键盘焦点移到菜单栏",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+F2"
+      ]
+    },
+    {
+      "id": "sys.menubar.statusMenu",
+      "category": "system",
+      "subcategory": "menubar",
+      "displayKey": "⌃F8",
+      "description": "将键盘焦点移到状态菜单(辅助功能下)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+F8"
+      ]
+    },
+    {
+      "id": "sys.input.switchNext",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "⌃⌥Space",
+      "description": "切换到下一个输入法",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Option+Space"
+      ]
+    },
+    {
+      "id": "sys.input.dictation",
+      "category": "system",
+      "subcategory": "input",
+      "displayKey": "fn fn",
+      "description": "启动听写(Dictation)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Fn Fn"
+      ]
+    },
+    {
+      "id": "sys.spotlight.find",
+      "category": "system",
+      "subcategory": "spotlight",
+      "displayKey": "⌘⌥Space",
+      "description": "打开 Finder 搜索窗口(Spotlight Finder Search)",
+      "appScope": [
+        "system",
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Option+Space"
+      ]
+    },
+    {
+      "id": "sys.screenshot.touchbar",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⇧⌘6",
+      "description": "截取 Touch Bar 到桌面(macOS 14 保留兼容)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+6"
+      ]
+    },
+    {
+      "id": "sys.screenshot.clipboard.touchbar",
+      "category": "system",
+      "subcategory": "screenshot",
+      "displayKey": "⌃⇧⌘6",
+      "description": "截取 Touch Bar 到剪贴板(macOS 14 保留兼容)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Shift+Cmd+6"
+      ]
+    },
+    {
+      "id": "sys.missioncontrol.exposeAll",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "F9",
+      "description": "Exposé:显示所有打开的窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F9"
+      ]
+    },
+    {
+      "id": "sys.missioncontrol.appExpose",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "F10",
+      "description": "显示当前应用的所有窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F10"
+      ]
+    },
+    {
+      "id": "sys.missioncontrol.dashboard",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃F12",
+      "description": "Dashboard(需先在系统设置中启用)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+F12"
+      ]
+    },
+    {
+      "id": "sys.missioncontrol.stageManager",
+      "category": "system",
+      "subcategory": "missioncontrol",
+      "displayKey": "⌃F4",
+      "description": "切换台前调度(Stage Manager)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+F4"
+      ]
+    },
+    {
+      "id": "sys.window.minimizeAll",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌥⌘M",
+      "description": "最小化当前应用的所有窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+M"
+      ]
+    },
+    {
+      "id": "sys.window.hideOthers",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌥⌘H",
+      "description": "隐藏其他应用窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+H"
+      ]
+    },
+    {
+      "id": "sys.window.cycleWindowsReverse",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⇧⌘`",
+      "description": "同应用窗口反向循环切换",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+`"
+      ]
+    },
+    {
+      "id": "sys.window.appMenu",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌃F1",
+      "description": "激活应用菜单(完整键盘访问)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+F1"
+      ]
+    },
+    {
+      "id": "sys.window.closeAllWindows",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌥⌘W",
+      "description": "关闭当前应用的所有窗口",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+W"
+      ]
+    },
+    {
+      "id": "sys.window.newTab",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⌘⇧⌥T",
+      "description": "在部分应用(如 Terminal)打开新标签页的变体",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+Option+T"
+      ]
+    },
+    {
+      "id": "sys.window.appSwitcher",
+      "category": "system",
+      "subcategory": "window",
+      "displayKey": "⇧⌘Tab",
+      "description": "反向循环应用切换器",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+Tab"
+      ]
+    },
+    {
+      "id": "finder.tab.new",
+      "category": "finder",
+      "subcategory": "tab",
+      "displayKey": "⌘T",
+      "description": "在当前 Finder 窗口新建标签页",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+T"
+      ]
+    },
+    {
+      "id": "finder.tab.close",
+      "category": "finder",
+      "subcategory": "tab",
+      "displayKey": "⌘W",
+      "description": "关闭当前 Finder 标签页(或窗口)",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+W"
+      ]
+    },
+    {
+      "id": "finder.tab.next",
+      "category": "finder",
+      "subcategory": "tab",
+      "displayKey": "⌃Tab",
+      "description": "切换到下一个 Finder 标签页",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Tab"
+      ]
+    },
+    {
+      "id": "finder.tab.prev",
+      "category": "finder",
+      "subcategory": "tab",
+      "displayKey": "⌃⇧Tab",
+      "description": "切换到上一个 Finder 标签页",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Shift+Tab"
+      ]
+    },
+    {
+      "id": "finder.tab.mergeAll",
+      "category": "finder",
+      "subcategory": "tab",
+      "displayKey": "⌥⇧⌘W",
+      "description": "合并所有 Finder 窗口到一个标签页窗口",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Shift+Cmd+W"
+      ]
+    },
+    {
+      "id": "finder.select.all",
+      "category": "finder",
+      "subcategory": "selection",
+      "displayKey": "⌘A",
+      "description": "选中当前窗口所有项目",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+A"
+      ]
+    },
+    {
+      "id": "finder.select.none",
+      "category": "finder",
+      "subcategory": "selection",
+      "displayKey": "⌘⌥A",
+      "description": "取消所有选中",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Option+A"
+      ]
+    },
+    {
+      "id": "finder.select.invert",
+      "category": "finder",
+      "subcategory": "selection",
+      "displayKey": "⌥⌘I",
+      "description": "反向选择",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+I"
+      ]
+    },
+    {
+      "id": "finder.tag.red",
+      "category": "finder",
+      "subcategory": "tag",
+      "displayKey": "⌃⌘1",
+      "description": "为所选项目添加红色标签",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Cmd+1"
+      ]
+    },
+    {
+      "id": "finder.tag.orange",
+      "category": "finder",
+      "subcategory": "tag",
+      "displayKey": "⌃⌘2",
+      "description": "为所选项目添加橙色标签",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Cmd+2"
+      ]
+    },
+    {
+      "id": "finder.tag.yellow",
+      "category": "finder",
+      "subcategory": "tag",
+      "displayKey": "⌃⌘3",
+      "description": "为所选项目添加黄色标签",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Cmd+3"
+      ]
+    },
+    {
+      "id": "finder.tag.none",
+      "category": "finder",
+      "subcategory": "tag",
+      "displayKey": "⌃⌘0",
+      "description": "移除所选项目的所有标签",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Cmd+0"
+      ]
+    },
+    {
+      "id": "finder.show.statusbar",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘/",
+      "description": "显示/隐藏状态栏",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+/"
+      ]
+    },
+    {
+      "id": "finder.show.sidebar",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌃⌘S",
+      "description": "显示/隐藏边栏",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Cmd+S"
+      ]
+    },
+    {
+      "id": "finder.view.options",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘J",
+      "description": "打开显示选项(当前视图设置)",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+J"
+      ]
+    },
+    {
+      "id": "finder.arrange.cleanUp",
+      "category": "finder",
+      "subcategory": "view",
+      "displayKey": "⌘0",
+      "description": "整理项目(按当前排序方式对齐图标)",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+0"
+      ]
+    },
+    {
+      "id": "finder.go.recent",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⇧⌘F",
+      "description": "在 Finder 中显示最近使用",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+F"
+      ]
+    },
+    {
+      "id": "finder.go.applications",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⇧⌘A",
+      "description": "跳到 Applications 目录",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+A"
+      ]
+    },
+    {
+      "id": "finder.go.documents",
+      "category": "finder",
+      "subcategory": "navigation",
+      "displayKey": "⇧⌘O",
+      "description": "跳到 Documents 目录",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+O"
+      ]
+    },
+    {
+      "id": "finder.connect.server",
+      "category": "finder",
+      "subcategory": "connect",
+      "displayKey": "⌘K",
+      "description": "连接服务器(AFP/SMB 等)",
+      "appScope": [
+        "finder"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+K"
+      ]
+    },
+    {
+      "id": "term.readline.lineStart",
+      "category": "terminal",
+      "subcategory": "shell",
+      "displayKey": "⌃A",
+      "description": "光标移到行首(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+A"
+      ]
+    },
+    {
+      "id": "term.readline.lineEnd",
+      "category": "terminal",
+      "subcategory": "shell",
+      "displayKey": "⌃E",
+      "description": "光标移到行尾(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+E"
+      ]
+    },
+    {
+      "id": "term.readline.killToEnd",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌃K",
+      "description": "删除光标到行尾(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+K"
+      ]
+    },
+    {
+      "id": "term.readline.killToStart",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌃U",
+      "description": "删除光标到行首(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+U"
+      ]
+    },
+    {
+      "id": "term.readline.reverseSearch",
+      "category": "terminal",
+      "subcategory": "search",
+      "displayKey": "⌃R",
+      "description": "反向搜索历史命令(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+R"
+      ]
+    },
+    {
+      "id": "term.readline.historyPrev",
+      "category": "terminal",
+      "subcategory": "shell",
+      "displayKey": "⌃P",
+      "description": "上一条历史命令(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+P"
+      ]
+    },
+    {
+      "id": "term.readline.historyNext",
+      "category": "terminal",
+      "subcategory": "shell",
+      "displayKey": "⌃N",
+      "description": "下一条历史命令(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+N"
+      ]
+    },
+    {
+      "id": "term.readline.killWord",
+      "category": "terminal",
+      "subcategory": "edit",
+      "displayKey": "⌃W",
+      "description": "删除光标前一个词(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+W"
+      ]
+    },
+    {
+      "id": "term.readline.yank",
+      "category": "terminal",
+      "subcategory": "pasteboard",
+      "displayKey": "⌃Y",
+      "description": "粘贴最近删除的内容(Readline yank)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Y"
+      ]
+    },
+    {
+      "id": "term.readline.clearScreen",
+      "category": "terminal",
+      "subcategory": "shell",
+      "displayKey": "⌃L",
+      "description": "清屏(Readline)",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "Bash/Zsh Readline Manual",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+L"
+      ]
+    },
+    {
+      "id": "term.close.window",
+      "category": "terminal",
+      "subcategory": "window",
+      "displayKey": "⇧⌘W",
+      "description": "关闭 Terminal 窗口",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+W"
+      ]
+    },
+    {
+      "id": "term.close.tab",
+      "category": "terminal",
+      "subcategory": "tab",
+      "displayKey": "⌘W",
+      "description": "关闭当前标签",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+W"
+      ]
+    },
+    {
+      "id": "term.prev.tab",
+      "category": "terminal",
+      "subcategory": "tab",
+      "displayKey": "⌃⇧Tab",
+      "description": "上一个标签",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Shift+Tab"
+      ]
+    },
+    {
+      "id": "term.split.horizontal",
+      "category": "terminal",
+      "subcategory": "split",
+      "displayKey": "⇧⌘D",
+      "description": "水平拆分面板",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+D"
+      ]
+    },
+    {
+      "id": "term.close.split",
+      "category": "terminal",
+      "subcategory": "split",
+      "displayKey": "⇧⌘⌫",
+      "description": "关闭当前面板",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+Backspace"
+      ]
+    },
+    {
+      "id": "term.find.next",
+      "category": "terminal",
+      "subcategory": "search",
+      "displayKey": "⌘G",
+      "description": "查找下一个匹配",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+G"
+      ]
+    },
+    {
+      "id": "term.find.prev",
+      "category": "terminal",
+      "subcategory": "search",
+      "displayKey": "⇧⌘G",
+      "description": "查找上一个匹配",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+G"
+      ]
+    },
+    {
+      "id": "term.select.line",
+      "category": "terminal",
+      "subcategory": "selection",
+      "displayKey": "⌥⌘T",
+      "description": "鼠标拖动时按 Option:矩形选择",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+T"
+      ]
+    },
+    {
+      "id": "term.mark.bookmark",
+      "category": "terminal",
+      "subcategory": "bookmark",
+      "displayKey": "⌥⌘B",
+      "description": "标记/书签当前位置",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+B"
+      ]
+    },
+    {
+      "id": "term.zoom.toggle",
+      "category": "terminal",
+      "subcategory": "view",
+      "displayKey": "⇧⌘.",
+      "description": "放大/缩小当前面板",
+      "appScope": [
+        "terminal"
+      ],
+      "verifiedAgainst": "macOS 14 Terminal User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+."
+      ]
+    },
+    {
+      "id": "text.cursor.docStart",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌘↑",
+      "description": "光标到文档开头",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Up"
+      ]
+    },
+    {
+      "id": "text.cursor.docEnd",
+      "category": "text",
+      "subcategory": "cursor",
+      "displayKey": "⌘↓",
+      "description": "光标到文档结尾",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Down"
+      ]
+    },
+    {
+      "id": "text.select.docStart",
+      "category": "text",
+      "subcategory": "selection",
+      "displayKey": "⇧⌘↑",
+      "description": "选中到文档开头",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+Up"
+      ]
+    },
+    {
+      "id": "text.select.docEnd",
+      "category": "text",
+      "subcategory": "selection",
+      "displayKey": "⇧⌘↓",
+      "description": "选中到文档结尾",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+Down"
+      ]
+    },
+    {
+      "id": "text.cursor.paragraphPrev",
+      "category": "text",
+      "subcategory": "paragraph",
+      "displayKey": "⌥↑",
+      "description": "光标到上一段",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Up"
+      ]
+    },
+    {
+      "id": "text.cursor.paragraphNext",
+      "category": "text",
+      "subcategory": "paragraph",
+      "displayKey": "⌥↓",
+      "description": "光标到下一段",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Down"
+      ]
+    },
+    {
+      "id": "text.indent.outdent",
+      "category": "text",
+      "subcategory": "edit",
+      "displayKey": "⌘[",
+      "description": "减少缩进(outdent)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+["
+      ]
+    },
+    {
+      "id": "text.indent.indent",
+      "category": "text",
+      "subcategory": "edit",
+      "displayKey": "⌘]",
+      "description": "增加缩进(indent)",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+]"
+      ]
+    },
+    {
+      "id": "text.format.bold",
+      "category": "text",
+      "subcategory": "format",
+      "displayKey": "⌘B",
+      "description": "加粗",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+B"
+      ]
+    },
+    {
+      "id": "text.format.italic",
+      "category": "text",
+      "subcategory": "format",
+      "displayKey": "⌘I",
+      "description": "斜体",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+I"
+      ]
+    },
+    {
+      "id": "text.format.underline",
+      "category": "text",
+      "subcategory": "format",
+      "displayKey": "⌘U",
+      "description": "下划线",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+U"
+      ]
+    },
+    {
+      "id": "text.spellcheck",
+      "category": "text",
+      "subcategory": "edit",
+      "displayKey": "⌘:",
+      "description": "拼写和语法检查",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+:"
+      ]
+    },
+    {
+      "id": "text.format.copyStyle",
+      "category": "text",
+      "subcategory": "clipboard",
+      "displayKey": "⌥⌘C",
+      "description": "复制格式",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+C"
+      ]
+    },
+    {
+      "id": "text.paste.matchStyle",
+      "category": "text",
+      "subcategory": "clipboard",
+      "displayKey": "⌥⇧⌘V",
+      "description": "粘贴并匹配目标样式",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Shift+Cmd+V"
+      ]
+    },
+    {
+      "id": "text.find.useSelection",
+      "category": "text",
+      "subcategory": "find",
+      "displayKey": "⌘E",
+      "description": "使用当前选区作为查找关键词",
+      "appScope": [
+        "system"
+      ],
+      "verifiedAgainst": "macOS 14 Apple User Guide",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+E"
+      ]
+    },
+    {
+      "id": "vscode.gotoDefinition",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "F12",
+      "description": "跳到定义",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F12"
+      ]
+    },
+    {
+      "id": "vscode.gotoDefinitionMouse",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘Click",
+      "description": "跳到定义(鼠标)",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Click"
+      ]
+    },
+    {
+      "id": "vscode.findReferences",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⇧F12",
+      "description": "查找所有引用",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+F12"
+      ]
+    },
+    {
+      "id": "vscode.rename",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "F2",
+      "description": "重命名符号",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F2"
+      ]
+    },
+    {
+      "id": "vscode.blockComment",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⇧⌥A",
+      "description": "切换块注释",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Option+A"
+      ]
+    },
+    {
+      "id": "vscode.search.global",
+      "category": "vscode",
+      "subcategory": "search",
+      "displayKey": "⇧⌘F",
+      "description": "全局搜索文件",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+F"
+      ]
+    },
+    {
+      "id": "vscode.replace.global",
+      "category": "vscode",
+      "subcategory": "search",
+      "displayKey": "⇧⌘H",
+      "description": "全局替换",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+Cmd+H"
+      ]
+    },
+    {
+      "id": "vscode.addSelectionNext",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘D",
+      "description": "选中下个匹配项",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+D"
+      ]
+    },
+    {
+      "id": "vscode.addCursorBelow",
+      "category": "vscode",
+      "subcategory": "editor",
+      "displayKey": "⌘⌥↓",
+      "description": "下方添加光标",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Option+Down"
+      ]
+    },
+    {
+      "id": "vscode.debug.start",
+      "category": "vscode",
+      "subcategory": "debug",
+      "displayKey": "F5",
+      "description": "启动/继续调试",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "F5"
+      ]
+    },
+    {
+      "id": "vscode.debug.stop",
+      "category": "vscode",
+      "subcategory": "debug",
+      "displayKey": "⇧F5",
+      "description": "停止调试",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Shift+F5"
+      ]
+    },
+    {
+      "id": "vscode.sourceControl",
+      "category": "vscode",
+      "subcategory": "git",
+      "displayKey": "⌃⇧G",
+      "description": "打开源代码管理面板",
+      "appScope": [
+        "vscode"
+      ],
+      "verifiedAgainst": "VSCode 1.89 Keybindings",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Ctrl+Shift+G"
+      ]
+    },
+    {
+      "id": "chrome.tab.switchTo1",
+      "category": "chrome",
+      "subcategory": "tab",
+      "displayKey": "⌘1",
+      "description": "切换到第 1 个标签页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+1"
+      ]
+    },
+    {
+      "id": "chrome.window.closeAll",
+      "category": "chrome",
+      "subcategory": "window",
+      "displayKey": "⌘⇧W",
+      "description": "关闭所有标签页(整个窗口)",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+W"
+      ]
+    },
+    {
+      "id": "chrome.window.quit",
+      "category": "chrome",
+      "subcategory": "window",
+      "displayKey": "⌘Q",
+      "description": "退出 Chrome",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Q"
+      ]
+    },
+    {
+      "id": "chrome.nav.reload",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘R",
+      "description": "重新加载当前页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+R"
+      ]
+    },
+    {
+      "id": "chrome.nav.reloadHard",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘⇧R",
+      "description": "强制重新加载(忽略缓存)",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+R"
+      ]
+    },
+    {
+      "id": "chrome.nav.stop",
+      "category": "chrome",
+      "subcategory": "navigation",
+      "displayKey": "⌘.",
+      "description": "停止加载当前页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+."
+      ]
+    },
+    {
+      "id": "chrome.bookmark.manager",
+      "category": "chrome",
+      "subcategory": "bookmark",
+      "displayKey": "⌘⇧O",
+      "description": "打开书签管理器",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+O"
+      ]
+    },
+    {
+      "id": "chrome.history.all",
+      "category": "chrome",
+      "subcategory": "history",
+      "displayKey": "⌘⇧H",
+      "description": "打开\"全部历史\"页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+H"
+      ]
+    },
+    {
+      "id": "chrome.downloads.open",
+      "category": "chrome",
+      "subcategory": "download",
+      "displayKey": "⌘⇧J",
+      "description": "打开下载页",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Cmd+Shift+J"
+      ]
+    },
+    {
+      "id": "chrome.devtools.viewSource",
+      "category": "chrome",
+      "subcategory": "devtools",
+      "displayKey": "⌥⌘U",
+      "description": "查看页面源代码",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+U"
+      ]
+    },
+    {
+      "id": "chrome.devtools.console",
+      "category": "chrome",
+      "subcategory": "devtools",
+      "displayKey": "⌥⌘J",
+      "description": "打开 JavaScript 控制台",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+J"
+      ]
+    },
+    {
+      "id": "chrome.devtools.inspect",
+      "category": "chrome",
+      "subcategory": "devtools",
+      "displayKey": "⌥⌘C",
+      "description": "检查元素(Inspect Element)",
+      "appScope": [
+        "chrome"
+      ],
+      "verifiedAgainst": "Chrome Keyboard Shortcuts",
+      "verifiedDate": "2026-06-24",
+      "aliases": [
+        "Option+Cmd+C"
+      ]
+    }
+  ]
+}
