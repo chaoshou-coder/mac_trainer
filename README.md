@@ -12,7 +12,7 @@
 
 ---
 
-Mac Keyboard Trainer catalogs 203 macOS shortcuts across six sections — system, Finder, Terminal, text editing, VSCode, and Chrome — with three-pane browsing, ⌘F cross-field search, ⌘R two-direction random quiz, and a four-state progress tracker. The app only guides; you practice on your real Mac. No simulated UI, no account, no cloud — all progress stays in local UserDefaults.
+Mac Keyboard Trainer catalogs 202 macOS shortcuts across six sections — system, Finder, Terminal, text editing, VSCode, and Chrome — with three-pane browsing, ⌘F cross-field search, ⌘R two-direction random quiz, and a four-state progress tracker. The app only guides; you practice on your real Mac. No simulated UI, no account, no cloud — all progress stays in local UserDefaults.
 
 ## Why MacTrainer
 
@@ -27,11 +27,11 @@ Mac Keyboard Trainer catalogs 203 macOS shortcuts across six sections — system
 | Section | Shortcuts | Coverage |
 |---------|-----------|----------|
 | System | 55 | Spotlight, screenshots, Mission Control, accessibility, Dock, menubar |
-| Finder | 35 | Navigation, file ops, view modes, tags, tabs, AirDrop |
+| Finder | 39 | Navigation, file ops, view modes, tags, tabs, AirDrop |
 | Terminal | 31 | Window/tab/split, navigation, edit, shell readline, search |
 | Text editing | 28 | Cursor, selection, delete, format, clipboard, find |
-| VSCode | 27 | Command palette, file ops, editor, search, debug, Git |
-| Chrome | 27 | Tabs, windows, navigation, bookmarks, history, downloads, DevTools |
+| VSCode | 24 | Command palette, file ops, editor, search, debug, Git |
+| Chrome | 25 | Tabs, windows, navigation, bookmarks, history, downloads, DevTools |
 
 - `⌘F` search across displayKey, description, aliases, and category
 - `⌘R` starts a quiz session, randomly sampled from your practiced shortcuts
@@ -59,7 +59,7 @@ Xcode treats the Swift Package as a project. Press `⌘U` to run tests, `⌘R` t
 ### Command-Line
 
 ```bash
-swift test     # run the full test suite (~40 tests)
+swift test     # run the full test suite (42 tests)
 swift run      # build and launch the app
 ```
 
@@ -124,15 +124,14 @@ Each shortcut is one entry in `Sources/MacTrainer/Resources/data/shortcuts.json`
 At startup the app validates:
 
 - unique `id`
-- unique `displayKey` (after Unicode normalization)
-- aliases do not collide with any `displayKey`
 - `appScope` values are in the known set
+- `displayKey` and aliases are allowed to repeat across different apps — the same key combo (Cmd+N, Cmd+Backspace, ...) means different things in Finder, Terminal, text editing, etc., so global uniqueness would reject legitimate entries
 
 Any violation fails startup and prints the offending field.
 
 ## Roadmap
 
-- **v0.1 (this)** — 203 shortcuts, three-pane UI, two-direction quiz
+- **v0.1 (this)** — 202 shortcuts, three-pane UI, two-direction quiz
 - **v0.2** — Add Safari, Mail, Notes (only data changes, no code)
 - **v0.3** — Customizable section ordering + per-section progress notes
 - **v1.0** — macOS 13 support, sign + notarize for distribution
