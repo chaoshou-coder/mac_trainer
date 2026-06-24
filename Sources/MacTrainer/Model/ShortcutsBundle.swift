@@ -27,35 +27,11 @@ public struct ShortcutsBundle: Codable, Sendable {
         return bundle
     }
 
-    /// 加载后做冲突检查(设计文档:aliases 归一后与多条 displayKey 冲突则拒启动)
+    /// 加载后做冲突检查
+    /// - displayKey **不**要求全局唯一:同组合键在不同 app 是不同快捷键(如 ⌘N 在 Finder/Terminal/Chrome、⌘⌫ 在 Finder/Text 各有不同语义)
+    /// - alias **不**查重:同上,同 alias 可指向不同 app 的不同 displayKey
+    /// - id 全局唯一(target macOS 14+,数据已人工核验,不再做交叉冲突检查)
     public static func validate(_ bundle: ShortcutsBundle) throws {
-        // 1. aliases 归一结果与 displayKey 冲突检查
-        var displayKeyNormSet: [String: String] = [:]  // normalized -> original id
-        for s in bundle.shortcuts {
-            let n = Normalization.normalize(s.displayKey)
-            if let existing = displayKeyNormSet[n] {
-                throw NSError(
-                    domain: "MacTrainer.Validate", code: 1,
-                    userInfo: [NSLocalizedDescriptionKey:
-                        "displayKey 归一冲突: '\(s.id)' 与 '\(existing)' 都归一为 '\(n)'"]
-                )
-            }
-            displayKeyNormSet[n] = s.id
-        }
-        // 2. aliases 归一后不能与任何 displayKey 冲突
-        for s in bundle.shortcuts {
-            for alias in s.aliases {
-                let n = Normalization.normalize(alias)
-                if let existing = displayKeyNormSet[n], existing != s.id {
-                    throw NSError(
-                        domain: "MacTrainer.Validate", code: 2,
-                        userInfo: [NSLocalizedDescriptionKey:
-                            "alias '\(alias)' 归一后 '\(n)' 与 displayKey '\(existing)' 冲突"]
-                    )
-                }
-            }
-        }
-        // 3. id 唯一
         let ids = bundle.shortcuts.map { $0.id }
         if Set(ids).count != ids.count {
             throw NSError(

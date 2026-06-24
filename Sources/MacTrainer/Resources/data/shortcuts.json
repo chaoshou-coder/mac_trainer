@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-06-24",
+  "lastUpdated": "2026-06-25",
   "shortcuts": [
     {
       "id": "sys.spotlight.open",
@@ -375,21 +375,6 @@
       "verifiedDate": "2026-06-20",
       "aliases": [
         "Ctrl+Shift+F12"
-      ]
-    },
-    {
-      "id": "sys.menubar.clock",
-      "category": "system",
-      "subcategory": "missioncontrol",
-      "displayKey": "F12",
-      "description": "Dashboard",
-      "appScope": [
-        "system"
-      ],
-      "verifiedAgainst": "macOS 14 Apple User Guide",
-      "verifiedDate": "2026-06-20",
-      "aliases": [
-        "F12"
       ]
     },
     {
