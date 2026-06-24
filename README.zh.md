@@ -87,6 +87,7 @@ swift run      # 编译并启动
 
 | 模块 | 职责 |
 |------|------|
+| `App/` | `@main` 入口,初始化窗口和 `AppModel` |
 | `Model/` | 快捷键数据、Normalization 归一化、SearchIndex |
 | `Review/` | 四状态机、4 选 1 干扰项生成、手输判分 |
 | `Views/` | SwiftUI NavigationSplitView、暗色模式适配 |
@@ -133,7 +134,7 @@ swift run      # 编译并启动
 - **v0.1(当前)** — 202 条快捷键、三栏 UI、双向抽考
 - **v0.2** — 新增 Safari、Mail、Notes(只改 JSON)
 - **v0.3** — 板块顺序可自定义 + 各板块进度笔记
-- **v1.0** — 支持 macOS 13,签名 + 公证分发
+- **v1.0** — 签名 + 公证分发
 
 ## 参与贡献
 

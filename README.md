@@ -88,6 +88,7 @@ swift run      # build and launch the app
 
 | Module | Responsibility |
 |--------|----------------|
+| `App/` | `@main` entry point, sets up the window and `AppModel` |
 | `Model/` | Shortcut data, normalization, search index |
 | `Review/` | 4-state machine, distractor generation, key matcher |
 | `Views/` | SwiftUI NavigationSplitView, dark-mode-ready |
@@ -134,7 +135,7 @@ Any violation fails startup and prints the offending field.
 - **v0.1 (this)** — 202 shortcuts, three-pane UI, two-direction quiz
 - **v0.2** — Add Safari, Mail, Notes (only data changes, no code)
 - **v0.3** — Customizable section ordering + per-section progress notes
-- **v1.0** — macOS 13 support, sign + notarize for distribution
+- **v1.0** — Sign + notarize for distribution
 
 ## Contributing
 
