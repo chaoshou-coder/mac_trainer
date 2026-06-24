@@ -34,12 +34,14 @@ public final class ProgressStore {
 
     /// T14 critical gap:写失败处理
     /// UserDefaults 通常不会失败,但磁盘满 / 权限时 setObject 可能 throw
-    /// 我们用 try? 包装 + 错误日志,失败时状态在内存中保留
+    /// 用 do/catch 包住,失败时写错误日志(状态保留在内存中)
     private func writeWithErrorHandling() {
         let payload = statuses.mapValues { $0.rawValue }
         do {
             let data = try JSONEncoder().encode(payload)
-            try? defaults.set(data, forKey: key)
+            defaults.set(data, forKey: key)
+        } catch {
+            logError("Failed to write statuses: \(error)")
         }
     }
 
@@ -48,6 +50,6 @@ public final class ProgressStore {
         errors.append("\(Date()): \(message)")
         // 只保留最近 50 条
         if errors.count > 50 { errors = Array(errors.suffix(50)) }
-        try? defaults.set(errors, forKey: errorLogKey)
+        defaults.set(errors, forKey: errorLogKey)
     }
 }

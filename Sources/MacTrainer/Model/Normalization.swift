@@ -3,28 +3,42 @@ import Foundation
 /// 共享 normalization 函数
 /// 在加载和判分时都被调用(必须只有一份,见 plan Code Quality P1)
 public enum Normalization {
-    private static let modifierMap: [String: String] = [
+    /// 键名 → canonical 形式
+    /// - 修饰键 → 符号
+    /// - 特殊键(Tab/Esc/Enter/Backspace)→ 符号
+    /// - 方向键 → 箭头符号
+    /// - "space"/"f1"..."f12" → 保留 canonical 大小写
+    private static let keyMap: [String: String] = [
+        // Modifiers
         "cmd": "⌘", "command": "⌘",
         "shift": "⇧",
         "ctrl": "⌃", "control": "⌃",
         "option": "⌥", "alt": "⌥",
+        // Special keys
         "tab": "⇥",
         "enter": "⏎", "return": "⏎",
         "backspace": "⌫", "delete": "⌫",
-        "esc": "⎋", "escape": "⎋"
+        "esc": "⎋", "escape": "⎋",
+        // Arrows
+        "left": "←", "right": "→", "up": "↑", "down": "↓",
+        // Canonical-case forms
+        "space": "Space",
+        "f1": "F1", "f2": "F2", "f3": "F3", "f4": "F4",
+        "f5": "F5", "f6": "F6", "f7": "F7", "f8": "F8",
+        "f9": "F9", "f10": "F10", "f11": "F11", "f12": "F12",
     ]
 
+    private static let modifierSymbols: Set<String> = ["⌘", "⇧", "⌃", "⌥"]
     private static let modifierOrder: [String] = ["⌃", "⌥", "⇧", "⌘"]
 
     /// 把 "Cmd+Shift+A" 归一为 "⇧⌘A"
     /// 规则:
     /// - 英文修饰键符号替换为 Unicode
-    /// - 去空格
-    /// - 去 "+"
+    /// - 去空格和 "+"
     /// - 修饰键按 ⌃ ⌥ ⇧ ⌘ 顺序排序
+    /// - 主键保留 canonical 形式(单字母 uppercase,其它按 keyMap)
     public static func normalize(_ raw: String) -> String {
         let lower = raw.lowercased()
-        // 拆分 token: 按 + 或空格
         let tokens = lower
             .replacingOccurrences(of: " ", with: "")
             .split(separator: "+", omittingEmptySubsequences: true)
@@ -34,17 +48,25 @@ public enum Normalization {
         var main = ""
 
         for token in tokens {
-            if let mapped = modifierMap[token] {
-                if !modifiers.contains(mapped) {
-                    modifiers.append(mapped)
+            if let mapped = keyMap[token] {
+                if modifierSymbols.contains(mapped) {
+                    if !modifiers.contains(mapped) {
+                        modifiers.append(mapped)
+                    }
+                } else {
+                    // 特殊键符号(Tab→⇥、Esc→⎋、←→等)或 canonical 形式("Space"、"F1")
+                    main = mapped
                 }
             } else {
-                // 非修饰键:取第一个字母(快捷键主键通常是一个字符)
-                main = token.uppercased()
+                // 未知 token:单字母 uppercase,其它原样保留
+                if token.count == 1, let c = token.first, c.isLetter {
+                    main = String(c).uppercased()
+                } else {
+                    main = token
+                }
             }
         }
 
-        // 按固定顺序排序
         modifiers.sort { a, b in
             let ai = modifierOrder.firstIndex(of: a) ?? Int.max
             let bi = modifierOrder.firstIndex(of: b) ?? Int.max

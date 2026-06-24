@@ -44,7 +44,8 @@ public struct DistractorGenerator {
         var options = distractors.map { Option(shortcut: $0, isCorrect: false) }
         options.append(Option(shortcut: correct, isCorrect: true))
         // 随机 shuffle
-        options.shuffle(using: &SeededRNG(seed: rng()))
+        var rng = SeededRNG(seed: rng())
+        options.shuffle(using: &rng)
         return options
     }
 }

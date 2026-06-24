@@ -4,6 +4,7 @@ import Foundation
 public final class MistakeCountStore {
     private let defaults: UserDefaults
     private let key = "MacTrainer.mistakeCount"
+    private let errorLogKey = "MacTrainer.mistakeCountErrors"
     private(set) var counts: [String: Int]
 
     public init(defaults: UserDefaults = .standard) {
@@ -45,7 +46,16 @@ public final class MistakeCountStore {
     private func writeWithErrorHandling() {
         do {
             let data = try JSONEncoder().encode(counts)
-            try? defaults.set(data, forKey: key)
+            defaults.set(data, forKey: key)
+        } catch {
+            logError("Failed to write mistakeCount: \(error)")
         }
+    }
+
+    public func logError(_ message: String) {
+        var errors = (defaults.array(forKey: errorLogKey) as? [String]) ?? []
+        errors.append("\(Date()): \(message)")
+        if errors.count > 50 { errors = Array(errors.suffix(50)) }
+        defaults.set(errors, forKey: errorLogKey)
     }
 }

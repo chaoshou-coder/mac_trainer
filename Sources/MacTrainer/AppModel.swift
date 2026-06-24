@@ -6,7 +6,7 @@ import Observation
 @Observable
 public final class AppModel {
     // MARK: - 原始数据
-    public private(set) var shortcuts: [Shortcut] = []
+    public internal(set) var shortcuts: [Shortcut] = []
     public private(set) var statuses: [String: ShortcutStatus] = [:]
     public private(set) var mistakeCounts: [String: Int] = [:]
 
@@ -173,11 +173,7 @@ public final class AppModel {
                 mistakeCount: mc
             )
             applyTransition(id: id, newStatus: t.newStatus, mistakeCount: t.newMistakeCount)
-            if case .wrong(let correctKey) = lastVerdict {
-                _ = correctKey  // already set
-            } else {
-                lastVerdict = .wrong(correctKey: q.correct.displayKey)
-            }
+            lastVerdict = .wrong(correctKey: q.correct.displayKey)
         }
     }
 }

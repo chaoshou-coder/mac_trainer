@@ -71,4 +71,12 @@ final class AppModelEndToEndTests {
         #expect(r.count == 1)
         #expect(r[0].id == "1")
     }
+
+    @Test func realBundleLoadsAndValidates() throws {
+        // 真实 bundle JSON 在新 normalize 下必须能加载 + 通过 validate
+        // 防止 Normalization 改动导致真实数据冲突但 fixture 测不到
+        let model = AppModel()
+        try model.loadBundledShortcuts()
+        #expect(model.shortcuts.count > 0)
+    }
 }
