@@ -3,19 +3,28 @@ import Foundation
 /// `Shortcut` 扩展:UI 渲染 helper
 ///
 /// v0.2 加 `displayKeyAnnotated`,渲染 "ASCII (Unicode)" 形式:
-/// - `displayKey: "C-x"` → `"C-x (⌃X)"`
-/// - `displayKey: "⌘A"` → `"⌘A"`(ASCII == Unicode,不显示括号)
-/// - `displayKey: "M-x"` → `"M-x"`(meta normalize 后是 M,ASCII == Unicode)
-/// - v0.3 扩展:有 `sequence` 时返回 `"C-x C-s (⌃X ⌃S)"`
+/// - `displayKey: "C-x"` → `"C-x (⌃X)"` ← C 变 ⌃(不同 symbol)
+/// - `displayKey: "M-x"` → `"M-x"` ← M 是 key letter,normalize 后跟 ASCII 同字符(只是 case)
+/// - `displayKey: "⌘A"` → `"⌘A"` ← ⌘ 不变
+/// - `displayKey: "h"` → `"h"` ← 单字母,normalize 后 uppercase 但只是 case
+///
+/// 规则:
+/// 1. normalize 拿到 unicode 形式(全小写)
+/// 2. 如果 ascii 首字母大写,unicode 整段大写(保留 case 信息)
+/// 3. 过滤掉分隔符(`-`、空格),字母 lowercase 后比较
+/// 4. 完全一致(只是大小写)→ 不显示括号;有 symbol 差异 → 显示
 public extension Shortcut {
-    /// UI 渲染:ASCII 主体 + Unicode 符号在括号(如果两者不同)
-    /// emacs 圈习惯 ASCII 形式("C-x" / "M-x"),但 Mac 用户看 ⌃X / ⌥X 更直观
-    /// 两者都顾到
     var displayKeyAnnotated: String {
         let ascii = displayKey
-        let unicode = Normalization.normalize(ascii)
-        // 如果 ASCII == Unicode(或者只是大小写不同,避免冗余括号)
-        if ascii == unicode || ascii == unicode.lowercased() {
+        let normalized = Normalization.normalize(ascii)
+        // 保留 ascii 首字母大小写
+        let firstIsUpper = ascii.first.map { $0.isUppercase } ?? false
+        let unicode = firstIsUpper ? normalized.uppercased() : normalized
+        // 过滤掉 - 和空格,只比 alphanumeric(忽略 normalize 抹掉的 dash)
+        let alphanum: (String) -> String = { s in
+            s.filter { $0.isLetter || $0.isNumber }.lowercased()
+        }
+        if alphanum(ascii) == alphanum(unicode) {
             return ascii
         }
         return "\(ascii) (\(unicode))"
