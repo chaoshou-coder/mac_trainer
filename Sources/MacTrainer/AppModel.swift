@@ -6,7 +6,7 @@ import Observation
 @Observable
 public final class AppModel {
     // MARK: - 原始数据
-    public private(set) var categories: [ShortcutCategory] = []  // v0.2:从 bundle 读(data-driven)
+    public internal(set) var categories: [ShortcutCategory] = []  // v0.2:从 bundle 读(data-driven);internal(set) 让 @testable 注入 fixture
     public internal(set) var shortcuts: [Shortcut] = []
     public private(set) var statuses: [String: ShortcutStatus] = [:]
     public private(set) var mistakeCounts: [String: Int] = [:]
