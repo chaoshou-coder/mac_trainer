@@ -6,6 +6,7 @@ import Observation
 @Observable
 public final class AppModel {
     // MARK: - 原始数据
+    public private(set) var categories: [ShortcutCategory] = []  // v0.2:从 bundle 读(data-driven)
     public internal(set) var shortcuts: [Shortcut] = []
     public private(set) var statuses: [String: ShortcutStatus] = [:]
     public private(set) var mistakeCounts: [String: Int] = [:]
@@ -49,6 +50,7 @@ public final class AppModel {
     // MARK: - 加载
     public func loadBundledShortcuts() throws {
         let bundle = try ShortcutsBundle.loadBundled()
+        self.categories = bundle.categories  // v0.2:data-driven,UI 消费这个
         self.shortcuts = bundle.shortcuts
         // 重新构造 distractorGen(它需要 allShortcuts)
         self.distractorGen = DistractorGenerator(allShortcuts: bundle.shortcuts)
