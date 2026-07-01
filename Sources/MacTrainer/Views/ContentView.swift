@@ -9,6 +9,31 @@ public struct ContentView: View {
     }
 
     public var body: some View {
+        // v0.2:loadState 失败时显示全屏错误 view,不让用户面对空 UI
+        switch model.loadState {
+        case .empty, .loaded:
+            mainView
+        case .failed(let reason):
+            VStack(spacing: 16) {
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 64))
+                    .foregroundStyle(.orange)
+                Text("数据加载失败")
+                    .font(.title)
+                Text(reason)
+                    .font(.body)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 40)
+                Text("请升级 app 到 v0.2+ 后重试")
+                    .font(.callout)
+                    .foregroundStyle(.secondary)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+    }
+
+    private var mainView: some View {
         NavigationSplitView {
             SidebarView(model: model)
         } content: {

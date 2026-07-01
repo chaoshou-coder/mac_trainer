@@ -6,9 +6,39 @@ import Observation
 @Observable
 public final class AppModel {
     // MARK: - 原始数据
+    public private(set) var categories: [ShortcutCategory] = []  // v0.2:从 bundle 读(data-driven)
     public internal(set) var shortcuts: [Shortcut] = []
     public private(set) var statuses: [String: ShortcutStatus] = [:]
     public private(set) var mistakeCounts: [String: Int] = [:]
+
+    // MARK: - 加载状态(v0.2)
+    /// bundle 加载生命周期
+    /// - `.empty`:从未尝试加载
+    /// - `.loaded`:加载成功,UI 可用
+    /// - `.failed(reason)`:加载失败(老 v0.1 bundle / JSON 缺字段 / validate 不通过)
+    /// UI 渲染 ContentView 决定显示完整 UI 还是全屏错误
+    public enum LoadState: Sendable, Equatable {
+        case empty
+        case loaded
+        case failed(String)
+    }
+    public private(set) var loadState: LoadState = .empty
+
+    // v0.2-T3:appScopeFilter(distro 标签过滤)
+    public var appScopeFilter: String? = nil
+
+    /// v0.2-T3:当前选中 category 下所有 shortcut 的 distro 标签(去重)
+    /// 不包含语义 scope(`emacs` 之类),只从 `distroScopes` 过滤
+    /// nil 时(未选 category)返回空数组
+    public var availableDistros: [String] {
+        guard let cat = selectedCategory else { return [] }
+        let distros = shortcuts
+            .filter { $0.category == cat }
+            .flatMap { $0.appScope }
+            .filter { ShortcutCategory.distroScopes.contains($0) }
+        var seen = Set<String>()
+        return distros.filter { seen.insert($0).inserted }
+    }
 
     // MARK: - UI 状态
     public var selectedCategory: ShortcutCategory? = nil
@@ -49,6 +79,7 @@ public final class AppModel {
     // MARK: - 加载
     public func loadBundledShortcuts() throws {
         let bundle = try ShortcutsBundle.loadBundled()
+        self.categories = bundle.categories  // v0.2:data-driven,UI 消费这个
         self.shortcuts = bundle.shortcuts
         // 重新构造 distractorGen(它需要 allShortcuts)
         self.distractorGen = DistractorGenerator(allShortcuts: bundle.shortcuts)
@@ -59,11 +90,26 @@ public final class AppModel {
         }
     }
 
+    /// v0.2:加载并设 loadState(替代 AppModel.init 里的 try? swallow)
+    /// UI 用 loadState 决定显示完整三栏还是全屏错误
+    public func loadBundled() {
+        do {
+            try loadBundledShortcuts()
+            loadState = .loaded
+        } catch {
+            loadState = .failed(error.localizedDescription)
+        }
+    }
+
     // MARK: - 计算属性
     public var visibleShortcuts: [Shortcut] {
         var pool = shortcuts
         if let cat = selectedCategory {
             pool = pool.filter { $0.category == cat }
+        }
+        // v0.2:appScopeFilter(distro 标签过滤)只在选中的 category 内生效
+        if let filter = appScopeFilter, ShortcutCategory.distroScopes.contains(filter) {
+            pool = pool.filter { $0.appScope.contains(filter) }
         }
         switch sidebarFilter {
         case .all: break
@@ -88,7 +134,18 @@ public final class AppModel {
     // MARK: - 状态变更
     public func selectCategory(_ cat: ShortcutCategory?) {
         selectedCategory = cat
+        // v0.2:换 category 时清掉 distro filter(避免上次的 doom 筛选影响新 category)
+        appScopeFilter = nil
         selectedShortcutId = nil
+    }
+
+    /// v0.2:设 appScopeFilter(仅 distro 标签接受,语义 scope 拒绝)
+    public func setDistroFilter(_ distro: String?) {
+        if let d = distro, ShortcutCategory.distroScopes.contains(d) {
+            appScopeFilter = d
+        } else {
+            appScopeFilter = nil
+        }
     }
 
     public func selectShortcut(_ id: String?) {

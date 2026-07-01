@@ -14,6 +14,7 @@ public enum Normalization {
         "shift": "⇧",
         "ctrl": "⌃", "control": "⌃",
         "option": "⌥", "alt": "⌥",
+        "meta": "M",  // v0.2:emacs Meta key(完整形式,emacs 简写走 expandEmacsNotation)
         // Special keys
         "tab": "⇥",
         "enter": "⏎", "return": "⏎",
@@ -28,8 +29,31 @@ public enum Normalization {
         "f9": "F9", "f10": "F10", "f11": "F11", "f12": "F12",
     ]
 
-    private static let modifierSymbols: Set<String> = ["⌘", "⇧", "⌃", "⌥"]
-    private static let modifierOrder: [String] = ["⌃", "⌥", "⇧", "⌘"]
+    private static let modifierSymbols: Set<String> = ["⌘", "⇧", "⌃", "⌥", "M"]  // v0.2:M 是 emacs Meta
+    private static let modifierOrder: [String] = ["⌃", "⌥", "M", "⇧", "⌘"]  // M 排 ⌥ 后 ⇧ 前
+
+    /// v0.2:emacs 简写展开
+    /// "C-x" → "Ctrl+x"(前缀 C 是 Ctrl)
+    /// "M-x" → "Meta+x"(前缀 M 是 Meta)
+    /// "S-x" → "Shift+x"(前缀 S 是 Shift)
+    /// 规则:不含 "+" 且第 1 字符是 C/M/S 且含 "-" 且长度 ≥ 3
+    /// 避免 "c" 在 keyMap 里同时是 modifier 又可能是 main key 的冲突
+    private static func expandEmacsNotation(_ raw: String) -> String {
+        guard raw.count >= 3, !raw.contains("+") else { return raw }
+        let first = raw.first!
+        let prefix: String
+        switch first {
+        case "C": prefix = "Ctrl"
+        case "M": prefix = "Meta"
+        case "S": prefix = "Shift"
+        default: return raw
+        }
+        // 找 "-" 分隔符,确保 "-" 后面有内容
+        guard let dashIdx = raw.firstIndex(of: "-"),
+              raw.index(after: dashIdx) < raw.endIndex else { return raw }
+        let rest = String(raw[raw.index(after: dashIdx)...])
+        return "\(prefix)+\(rest)"
+    }
 
     /// 把 "Cmd+Shift+A" 归一为 "⇧⌘A"
     /// 规则:
@@ -38,7 +62,11 @@ public enum Normalization {
     /// - 修饰键按 ⌃ ⌥ ⇧ ⌘ 顺序排序
     /// - 主键保留 canonical 形式(单字母 uppercase,其它按 keyMap)
     public static func normalize(_ raw: String) -> String {
-        let lower = raw.lowercased()
+        // v0.2:emacs 简写预处理("C-x" → "Ctrl+x", "M-x" → "Meta+x", "S-x" → "Shift+x")
+        // 避免 keyMap 同时含 "c" → ⌃(让 emacs "C-x" 工作)跟 "Ctrl+C" 里 "c" 是 main key 的冲突
+        // 规则:input 不含 "+" 且 第 1 字符是 C/M/S 且 含 "-" 且 长度 ≥ 3
+        let input = expandEmacsNotation(raw)
+        let lower = input.lowercased()
         let tokens = lower
             .replacingOccurrences(of: " ", with: "")
             .split(separator: "+", omittingEmptySubsequences: true)
