@@ -11,6 +11,35 @@ public final class AppModel {
     public private(set) var statuses: [String: ShortcutStatus] = [:]
     public private(set) var mistakeCounts: [String: Int] = [:]
 
+    // MARK: - 加载状态(v0.2)
+    /// bundle 加载生命周期
+    /// - `.empty`:从未尝试加载
+    /// - `.loaded`:加载成功,UI 可用
+    /// - `.failed(reason)`:加载失败(老 v0.1 bundle / JSON 缺字段 / validate 不通过)
+    /// UI 渲染 ContentView 决定显示完整 UI 还是全屏错误
+    public enum LoadState: Sendable, Equatable {
+        case empty
+        case loaded
+        case failed(String)
+    }
+    public private(set) var loadState: LoadState = .empty
+
+    // v0.2-T3:appScopeFilter(distro 标签过滤)
+    public var appScopeFilter: String? = nil
+
+    /// v0.2-T3:当前选中 category 下所有 shortcut 的 distro 标签(去重)
+    /// 不包含语义 scope(`emacs` 之类),只从 `distroScopes` 过滤
+    /// nil 时(未选 category)返回空数组
+    public var availableDistros: [String] {
+        guard let cat = selectedCategory else { return [] }
+        let distros = shortcuts
+            .filter { $0.category == cat }
+            .flatMap { $0.appScope }
+            .filter { ShortcutCategory.distroScopes.contains($0) }
+        var seen = Set<String>()
+        return distros.filter { seen.insert($0).inserted }
+    }
+
     // MARK: - UI 状态
     public var selectedCategory: ShortcutCategory? = nil
     public var selectedShortcutId: String? = nil
@@ -58,6 +87,17 @@ public final class AppModel {
         for s in bundle.shortcuts {
             self.statuses[s.id] = self.progressStore.getStatus(for: s.id)
             self.mistakeCounts[s.id] = self.mistakeStore.getCount(for: s.id)
+        }
+    }
+
+    /// v0.2:加载并设 loadState(替代 AppModel.init 里的 try? swallow)
+    /// UI 用 loadState 决定显示完整三栏还是全屏错误
+    public func loadBundled() {
+        do {
+            try loadBundledShortcuts()
+            loadState = .loaded
+        } catch {
+            loadState = .failed(error.localizedDescription)
         }
     }
 

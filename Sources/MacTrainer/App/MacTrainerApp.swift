@@ -6,12 +6,9 @@ struct MacTrainerApp: App {
 
     init() {
         let m = AppModel()
-        do {
-            try m.loadBundledShortcuts()
-        } catch {
-            print("[MacTrainer] 加载失败: \(error.localizedDescription)")
-            // 不抛,允许 app 启动(空状态)
-        }
+        // v0.2:不再用 try? swallow,改用 loadBundled() 写 loadState
+        // (Outside Voice #1 修:之前吞掉 error 导致 v1→v2 breaking change 不真的 break)
+        m.loadBundled()
         _model = State(initialValue: m)
     }
 
