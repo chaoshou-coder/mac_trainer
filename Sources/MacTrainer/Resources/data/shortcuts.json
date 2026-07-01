@@ -3046,6 +3046,1698 @@
       "aliases": [
         "Option+Cmd+C"
       ]
+    },
+    {
+      "id": "emacs.movement.cf",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "C-f",
+      "description": "光标前移一字符",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.cb",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "C-b",
+      "description": "光标后移一字符",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.cn",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "C-n",
+      "description": "光标下移一行",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.cp",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "C-p",
+      "description": "光标上移一行",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.ca",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "C-a",
+      "description": "移到行首",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.ce",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "C-e",
+      "description": "移到行尾",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.mf",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "M-f",
+      "description": "前移一个 word",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.mb",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "M-b",
+      "description": "后移一个 word",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.mla",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "M-<",
+      "description": "移到 buffer 开头",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.movement.mgt",
+      "category": "emacs",
+      "subcategory": "movement",
+      "displayKey": "M->",
+      "description": "移到 buffer 结尾",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.scroll.cv",
+      "category": "emacs",
+      "subcategory": "scroll",
+      "displayKey": "C-v",
+      "description": "下滚一屏",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.scroll.mv",
+      "category": "emacs",
+      "subcategory": "scroll",
+      "displayKey": "M-v",
+      "description": "上滚一屏",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.scroll.cl",
+      "category": "emacs",
+      "subcategory": "scroll",
+      "displayKey": "C-l",
+      "description": "重绘屏幕 / 循环光标位置",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.scroll.ml-1",
+      "category": "emacs",
+      "subcategory": "scroll",
+      "displayKey": "M-1",
+      "description": "跳到第 1 个 window",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.cd",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-d",
+      "description": "前向删字符",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.md",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "M-d",
+      "description": "前向删 word",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.ck",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-k",
+      "description": "删到行尾",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.mk",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "M-k",
+      "description": "删到句尾",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.ct",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-t",
+      "description": "交换两个字符",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.mt",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "M-t",
+      "description": "交换两个 word",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.cy",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-y",
+      "description": "yank(粘贴)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.my",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "M-y",
+      "description": "yank-pop(循环粘贴历史)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.cw",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-w",
+      "description": "kill region(剪切)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.mw",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "M-w",
+      "description": "kill-ring-save(复制)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.c-slash",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-/",
+      "description": "undo(Emacs 29+)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.edit.cxu",
+      "category": "emacs",
+      "subcategory": "edit",
+      "displayKey": "C-x u",
+      "description": "undo(传统)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.cxb",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "C-x b",
+      "description": "switch-to-buffer",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.cxcb",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "C-x C-b",
+      "description": "list-buffers",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.cxk",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "C-x k",
+      "description": "kill-buffer",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.cxcs",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "C-x C-s",
+      "description": "save-buffer",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.cxs",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "C-x s",
+      "description": "save-some-buffers",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.cxcw",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "C-x C-w",
+      "description": "write-file(另存为)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.mx-save-buffer",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "M-x save-buffer",
+      "description": "M-x 命令:保存 buffer",
+      "appScope": [
+        "emacs",
+        "vanilla"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.mx-kill-buffer",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "M-x kill-buffer",
+      "description": "M-x 命令:关闭 buffer",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.mx-rename-buffer",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "M-x rename-buffer",
+      "description": "M-x 命令:重命名 buffer",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.buffer.mx-switch-to-buffer",
+      "category": "emacs",
+      "subcategory": "buffer",
+      "displayKey": "M-x switch-to-buffer",
+      "description": "M-x 命令:切到 buffer",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.cxcf",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "C-x C-f",
+      "description": "find-file(打开文件)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.cxcv",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "C-x C-v",
+      "description": "find-alternate-file",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.cxcr",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "C-x C-r",
+      "description": "find-file-read-only",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.cxd",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "C-x d",
+      "description": "dired(目录编辑)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.cxi",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "C-x i",
+      "description": "insert-file",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.mx-write-file",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "M-x write-file",
+      "description": "M-x 命令:写文件",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.mx-save-as",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "M-x save-as",
+      "description": "M-x 命令:另存为",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.file.mx-set-visited-file-name",
+      "category": "emacs",
+      "subcategory": "file",
+      "displayKey": "M-x set-visited-file-name",
+      "description": "M-x 命令:改关联文件",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.cs",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "C-s",
+      "description": "isearch-forward",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.cr",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "C-r",
+      "description": "isearch-backward",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.mx-isearch-forward",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "M-x isearch-forward",
+      "description": "M-x 命令:前向搜索",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.cms",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "C-M-s",
+      "description": "isearch-forward-regexp",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.cmr",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "C-M-r",
+      "description": "isearch-backward-regexp",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.mx-replace-string",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "M-x replace-string",
+      "description": "M-x 命令:替换字符串",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.mx-replace-regexp",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "M-x replace-regexp",
+      "description": "M-x 命令:正则替换",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.m-pct",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "M-%",
+      "description": "query-replace",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.mx-goto-line",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "M-x goto-line",
+      "description": "M-x 命令:跳到行号",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.search.mx-hi-line",
+      "category": "emacs",
+      "subcategory": "search",
+      "displayKey": "M-x highlight-regexp",
+      "description": "M-x 命令:高亮正则",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.window.cx0",
+      "category": "emacs",
+      "subcategory": "window",
+      "displayKey": "C-x 0",
+      "description": "delete-window",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.window.cx1",
+      "category": "emacs",
+      "subcategory": "window",
+      "displayKey": "C-x 1",
+      "description": "delete-other-windows",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.window.cx2",
+      "category": "emacs",
+      "subcategory": "window",
+      "displayKey": "C-x 2",
+      "description": "split-window-below",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.window.cx3",
+      "category": "emacs",
+      "subcategory": "window",
+      "displayKey": "C-x 3",
+      "description": "split-window-right",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.window.cxo",
+      "category": "emacs",
+      "subcategory": "window",
+      "displayKey": "C-x o",
+      "description": "other-window",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.window.cx4of",
+      "category": "emacs",
+      "subcategory": "window",
+      "displayKey": "C-x 4 o",
+      "description": "switch-to-buffer-other-window",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.help.chk",
+      "category": "emacs",
+      "subcategory": "help",
+      "displayKey": "C-h k",
+      "description": "describe-key",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.help.chf",
+      "category": "emacs",
+      "subcategory": "help",
+      "displayKey": "C-h f",
+      "description": "describe-function",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.help.chv",
+      "category": "emacs",
+      "subcategory": "help",
+      "displayKey": "C-h v",
+      "description": "describe-variable",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.help.chm",
+      "category": "emacs",
+      "subcategory": "help",
+      "displayKey": "C-h m",
+      "description": "describe-mode",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.help.chi",
+      "category": "emacs",
+      "subcategory": "help",
+      "displayKey": "C-h i",
+      "description": "info",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.help.mx-describe-mode",
+      "category": "emacs",
+      "subcategory": "help",
+      "displayKey": "M-x describe-mode",
+      "description": "M-x 命令:描述当前 mode",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.shell.mx-shell",
+      "category": "emacs",
+      "subcategory": "shell",
+      "displayKey": "M-x shell",
+      "description": "M-x 命令:开 shell",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.shell.mx-eshell",
+      "category": "emacs",
+      "subcategory": "shell",
+      "displayKey": "M-x eshell",
+      "description": "M-x 命令:开 eshell",
+      "appScope": [
+        "emacs",
+        "vanilla"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.shell.mx-term",
+      "category": "emacs",
+      "subcategory": "shell",
+      "displayKey": "M-x term",
+      "description": "M-x 命令:开 term",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.shell.mx-compile",
+      "category": "emacs",
+      "subcategory": "shell",
+      "displayKey": "M-x compile",
+      "description": "M-x 命令:编译",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.dired.cxd",
+      "category": "emacs",
+      "subcategory": "dired",
+      "displayKey": "C-x d",
+      "description": "dired(打开目录)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.dired.mx-dired",
+      "category": "emacs",
+      "subcategory": "dired",
+      "displayKey": "M-x dired",
+      "description": "M-x 命令:打开 dired",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.dired.mx-find-dired",
+      "category": "emacs",
+      "subcategory": "dired",
+      "displayKey": "M-x find-dired",
+      "description": "M-x 命令:find-dired",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.dired.mx-wdired-change-to-wd",
+      "category": "emacs",
+      "subcategory": "dired",
+      "displayKey": "M-x wdired-change-to-wd",
+      "description": "M-x 命令:改 wdired 目录",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.misc.cg",
+      "category": "emacs",
+      "subcategory": "misc",
+      "displayKey": "C-g",
+      "description": "keyboard-quit(取消)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.misc.cxcc",
+      "category": "emacs",
+      "subcategory": "misc",
+      "displayKey": "C-x C-c",
+      "description": "save-buffers-kill-emacs(退出)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.misc.mx",
+      "category": "emacs",
+      "subcategory": "misc",
+      "displayKey": "M-x",
+      "description": "调用命令(输命令名)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.misc.cq",
+      "category": "emacs",
+      "subcategory": "misc",
+      "displayKey": "C-q",
+      "description": "quoted-insert",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.misc.c-u",
+      "category": "emacs",
+      "subcategory": "misc",
+      "displayKey": "C-u",
+      "description": "universal-argument(数字前缀)",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "emacs.misc.mx-universal-argument",
+      "category": "emacs",
+      "subcategory": "misc",
+      "displayKey": "M-x universal-argument",
+      "description": "M-x 命令:数字前缀",
+      "appScope": [
+        "emacs"
+      ],
+      "verifiedAgainst": "Emacs Manual 29.4",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.h",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "h",
+      "description": "光标左移",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.j",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "j",
+      "description": "光标下移",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.k",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "k",
+      "description": "光标上移",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.l",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "l",
+      "description": "光标右移",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.w",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "w",
+      "description": "前移一个 word",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.b",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "b",
+      "description": "后移一个 word",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.e",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "e",
+      "description": "前移到 word 末尾",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.0",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "0",
+      "description": "移到行首",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.dollar",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "$",
+      "description": "移到行尾",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.normal.gg",
+      "category": "vim",
+      "subcategory": "normal",
+      "displayKey": "gg",
+      "description": "移到文件开头",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.dd",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "dd",
+      "description": "删当前行",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.yy",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "yy",
+      "description": "复制当前行",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.p",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "p",
+      "description": "粘贴到光标后",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.P",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "P",
+      "description": "粘贴到光标前",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.u",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "u",
+      "description": "undo",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.ctr",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "Ctrl-r",
+      "description": "redo",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.x",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "x",
+      "description": "删当前字符",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.X",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "X",
+      "description": "删前一个字符",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.r",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "r",
+      "description": "替换当前字符",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.edit.R",
+      "category": "vim",
+      "subcategory": "normal-edit",
+      "displayKey": "R",
+      "description": "进入替换 mode",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.op.dw",
+      "category": "vim",
+      "subcategory": "normal-operator",
+      "displayKey": "dw",
+      "description": "删 word",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.op.de",
+      "category": "vim",
+      "subcategory": "normal-operator",
+      "displayKey": "de",
+      "description": "删到 word 末尾",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.op.dd-dollar",
+      "category": "vim",
+      "subcategory": "normal-operator",
+      "displayKey": "d$",
+      "description": "删到行尾",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.op.cw",
+      "category": "vim",
+      "subcategory": "normal-operator",
+      "displayKey": "cw",
+      "description": "改 word(删 + 进 insert)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.op.ce",
+      "category": "vim",
+      "subcategory": "normal-operator",
+      "displayKey": "ce",
+      "description": "改到 word 末尾",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.slash",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": "/",
+      "description": "前向搜索",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.q",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": "?",
+      "description": "反向搜索",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.n",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": "n",
+      "description": "跳到下一个匹配",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.N",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": "N",
+      "description": "跳到上一个匹配",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.star",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": "*",
+      "description": "搜索光标所在 word(下)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.hash",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": "#",
+      "description": "搜索光标所在 word(上)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.colon-s",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": ":s",
+      "description": "替换(当前行)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.search.colon-g",
+      "category": "vim",
+      "subcategory": "search",
+      "displayKey": ":g",
+      "description": "全局替换",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.w",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":w",
+      "description": "保存",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.q",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":q",
+      "description": "退出",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.qbang",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":q!",
+      "description": "强制退出(不保存)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.wq",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":wq",
+      "description": "保存并退出",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.e",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":e",
+      "description": "编辑文件",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.help",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":help",
+      "description": "打开帮助",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.cmd.vs",
+      "category": "vim",
+      "subcategory": "command-line",
+      "displayKey": ":vs",
+      "description": "垂直分屏",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.insert.i",
+      "category": "vim",
+      "subcategory": "insert",
+      "displayKey": "i",
+      "description": "进入 insert mode(光标前)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.insert.a",
+      "category": "vim",
+      "subcategory": "insert",
+      "displayKey": "a",
+      "description": "进入 insert mode(光标后)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.insert.I",
+      "category": "vim",
+      "subcategory": "insert",
+      "displayKey": "I",
+      "description": "进入 insert mode(行首)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.insert.A",
+      "category": "vim",
+      "subcategory": "insert",
+      "displayKey": "A",
+      "description": "进入 insert mode(行尾)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.visual.v",
+      "category": "vim",
+      "subcategory": "visual",
+      "displayKey": "v",
+      "description": "进入 visual mode",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.visual.V",
+      "category": "vim",
+      "subcategory": "visual",
+      "displayKey": "V",
+      "description": "进入 visual line mode",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.visual.Ctrl-v",
+      "category": "vim",
+      "subcategory": "visual",
+      "displayKey": "Ctrl-v",
+      "description": "进入 visual block mode",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.misc.percent",
+      "category": "vim",
+      "subcategory": "misc",
+      "displayKey": "%",
+      "description": "跳到匹配的括号/标签",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.misc.ZZ",
+      "category": "vim",
+      "subcategory": "misc",
+      "displayKey": "ZZ",
+      "description": "保存并退出(无变化时不保存)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
+    },
+    {
+      "id": "vim.misc.ZQ",
+      "category": "vim",
+      "subcategory": "misc",
+      "displayKey": "ZQ",
+      "description": "强制退出(不保存)",
+      "appScope": [
+        "vim"
+      ],
+      "verifiedAgainst": "Vim 9.1 documentation",
+      "verifiedDate": "2026-07-01",
+      "aliases": []
     }
   ]
 }

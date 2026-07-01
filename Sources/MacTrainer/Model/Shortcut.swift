@@ -42,12 +42,14 @@ public struct Shortcut: Codable, Equatable, Identifiable, Sendable {
             throw DecodingError.dataCorruptedError(forKey: .appScope, in: c, debugDescription: "appScope 不能为空数组")
         }
         // 验证 appScope 值域
-        let validScopes: Set<String> = Set(ShortcutCategory.allCases.map { $0.rawValue })
+        // v0.2:用 ShortcutCategory.allValidAppScopes(包含语义 scope + distro 标签)
+        // 不能用 allCases,否则 distro 标签(vanilla/doom/spacemacs)会被拒
+        let validScopes = ShortcutCategory.allValidAppScopes
         for scope in self.appScope {
             guard validScopes.contains(scope) else {
                 throw DecodingError.dataCorruptedError(
                     forKey: .appScope, in: c,
-                    debugDescription: "appScope 包含非法值: \(scope), 合法值域: \(validScopes)"
+                    debugDescription: "appScope 包含非法值: \(scope), 合法值域: \(validScopes.sorted())"
                 )
             }
         }
