@@ -107,6 +107,10 @@ public final class AppModel {
         if let cat = selectedCategory {
             pool = pool.filter { $0.category == cat }
         }
+        // v0.2:appScopeFilter(distro 标签过滤)只在选中的 category 内生效
+        if let filter = appScopeFilter, ShortcutCategory.distroScopes.contains(filter) {
+            pool = pool.filter { $0.appScope.contains(filter) }
+        }
         switch sidebarFilter {
         case .all: break
         case .practiced:
@@ -130,7 +134,18 @@ public final class AppModel {
     // MARK: - 状态变更
     public func selectCategory(_ cat: ShortcutCategory?) {
         selectedCategory = cat
+        // v0.2:换 category 时清掉 distro filter(避免上次的 doom 筛选影响新 category)
+        appScopeFilter = nil
         selectedShortcutId = nil
+    }
+
+    /// v0.2:设 appScopeFilter(仅 distro 标签接受,语义 scope 拒绝)
+    public func setDistroFilter(_ distro: String?) {
+        if let d = distro, ShortcutCategory.distroScopes.contains(d) {
+            appScopeFilter = d
+        } else {
+            appScopeFilter = nil
+        }
     }
 
     public func selectShortcut(_ id: String?) {
